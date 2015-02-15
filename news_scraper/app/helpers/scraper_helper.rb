@@ -23,7 +23,7 @@ module ScraperHelper
 
 	def tiempo
 		tiempo = scraper("http://tiempo.infonews.com")	
-		# tiempo.at("div.article-container .article-container-inside .css-style-g9 .box-inside h1").text.strip
-		tiempo.at("div.article-container .article-container-inside .css-style-g9 .box-inside h1").text.strip
+		tiempo.at("div .css-style-g1 .box-inside h1").text.strip
 	end
+
 end
